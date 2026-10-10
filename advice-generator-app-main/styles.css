@@ -1,0 +1,74 @@
+/* ===== Font import ===== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* ===== Base page styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+/* ===== Card ===== */
+.card {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    padding: 40px 32px 60px;
+    max-width: 540px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+}
+
+.divider {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+/* ===== Dice button ===== */
+.dice-btn {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.2s;
+}
+
+.dice-btn:hover {
+    background-color: hsl(150, 100%, 80%);
+}
